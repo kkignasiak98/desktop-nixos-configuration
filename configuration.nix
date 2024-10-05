@@ -102,6 +102,13 @@
     wget
     git
     curl
+
+    # gnome extensions
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.user-themes
+    pkgs.gnomeExtensions.gtk4-desktop-icons-ng-ding
+
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
