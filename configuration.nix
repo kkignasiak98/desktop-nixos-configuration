@@ -61,6 +61,15 @@
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
+  # password less sudo
+  security.sudo.extraRules = [{
+    users = ["kkignasiak"];
+    commands = [{
+      command = "ALL";
+      options = ["NOPASSWD"];
+    }];
+  }];
+
   services.pipewire = {
     enable = true;
     alsa.enable = true;
